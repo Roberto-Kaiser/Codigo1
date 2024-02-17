@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Isso aqui é o título da página que aparece na aba, não dentro do site (não confunda com o cabeçalho: header) -->
+    <title>Dinossauros Mais Violentos do Mundo</title> 
+
+    <!-- Dentro do style podemos alterar o css da página (é aqui que deixamos o site bonito) -->
+    <style> 
+
+        /* Aqui mexemos nos elementos do body */
+        body {           
+            font-family: Roboto; 
+            font-size: 20px;    
+            margin: 0; 
+            padding: 0; 
+            background-color: #f0f0f0; 
+            scroll-behavior: smooth; 
+            overflow-y: scroll; 
+            position: relative; 
+            min-height: 100vh; 
+        }
+
+        /* Cabeçalho da página */
+        header {             
+            background-color: grey; 
+            color: #fff; 
+            padding: 20px; 
+            text-align: center; 
+        }
+
+        /* Subtítulo */
+        h1 {           
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Conteúdo pricipal */
+        main {           
+            padding: 20px;
+            
+        }
+
+        /* Edição dos parágrafos */
+        p {           
+            line-height: 1.6; 
+            color: #444; 
+        }
+
+        /* Só a galeria */
+        .gallery {           
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 20px; 
+        }
+        
+        /* As 3 imagens em linha/Galeria de imagens - Edição das imagens */
+        .gallery img {           
+            max-width: 30%; 
+            height: auto; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.3s ease; 
+        }
+
+        /* Subtítulo */
+        h2 {           
+            color: #333; 
+            font-size: 24px; 
+        }
+        
+        /* Mouse das imagens em linha */
+        .gallery img:hover {              
+            opacity: 0.8; 
+            transform: scale(1.1); 
+        }
+
+        /* É tipo uma forma de "formatar o conteúdo" */
+        .container {           
+            max-width: 1200px; 
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Edição da caixa de informações */
+        .info-box {           
+            background-color: #fff;
+            border: 1px solid #ccc; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+        }
+
+        /* Alinha o texto no centro */
+        .text-center {           
+            text-align: center;
+        }
+
+        /* Mudar o texto para caixa alta */
+        .text-uppercase {           
+            text-transform: uppercase;
+        }
+
+        /* Edição da última seção do site */
+        .last-section {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Edita o título da seção */
+        .section-title {
+            font-size: 28px;
+            font-weight: bold; 
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Edição da checklist */
+        .checklist {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        /* Edita o li que está dentro de ".checklist" li é utilizado para representar um elemento de uma lista */
+        .checklist li {
+            margin-bottom: 10px; 
+        }
+
+        /* Aqui o li recebe um tipo, que é o de checkbox: ao invés de ser só um item ele é um item com checkbox */
+        .checklist li input[type="checkbox"] {
+            display: none;
+        }
+        
+        /* Checklist */
+        .checklist li label::before { 
+            content: ""; 
+            display: inline-block;
+            width: 15px; 
+            height: 15px; 
+            border: 2px solid #28a745; 
+            margin-right: 10px;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 15px; 
+            cursor: pointer; 
+        }
+        
+        /* Checklist */
+        .checklist li input[type="checkbox"]:checked + label::before { 
+            content: "✔"; 
+            background-color: #28a745; 
+            color: #fff; 
+        }
+        
+        /* Checklist */
+        .checklist li label {
+            display: inline-block; 
+            vertical-align: middle; 
+            margin-left: 5px; 
+        }
+
+    </style>
+</head>
+<body>
+      
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Dinossauros Mais Violentos do Mundo</h1>
+    </header>
+
+    <!-- Conteiners com informação (infobox) -->
+    <main class="container">
+        <h2><a href="novo2.html" target="_blank"><i>Carcharodontosaurus saharicus</i></a></h2>
+        <p class="info-box text-center text-uppercase text-muted">O Carcharodontossauro viveu no período Cretáceo no nordeste africano. Atualmente possui duas subspecies conhecidas: saharicus e iguinensis. Sendo saharicus a maior e, por suposição, a mais violenta.</p>
+
+        <h2><a href="https://pt.wikipedia.org/wiki/Saurophaganax#:~:text=Saurophaganax%20%C3%A9%20um%20g%C3%AAnero)%20de,anos)%20na%20Am%C3%A9rica%20do%20Norte." target="_blank"><i>Saurophaganax maximus</i></a></h2>
+        <p class="info-box text-center text-uppercase text-muted">O Saurophaganax viveu no período Jurássico, na América do norte. Por muitos é considerado uma variante de seu primo de mesma família, o Alossauro. Mas seu tamanho é assustadoramente superior ao de um Alossauro comum, podendo atingir os 4,5 metros de altura e 13 de comprimento.</p>
+
+        <h2><a href="https://pt.wikipedia.org/wiki/Acrocantossauro" target="_blank"><i>Acrocanthosaurus atokensis</i></a></h2>
+        <p class="info-box text-center text-uppercase text-muted">O Acrocantossauro viveu no período cretáceo, na América do norte. Podendo chegar aos 4 metros de altura e 11,5 de comprimento, era extremamente veloz e ágil para o seu tamanho, sem considerar a sua capacidade de destroçar ossos.</p>
+        
+        <!-- Galeria de imagens - No final tem o title que serve para o nome do dinossauro aparecer quando passa o mouse e também tem o target blank que serve para abrir o link em outra aba -->
+        <div class="gallery">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d344371c-f648-4650-8854-6dc632bca8fc/deg6j4t-fa06f29f-8f43-4e2c-8a96-01c3cf9cc51c.jpg/v1/fill/w_1024,h_536,q_75,strp/carcharodontosaurus_2021_by_mariolanzas_deg6j4t-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTM2IiwicGF0aCI6IlwvZlwvZDM0NDM3MWMtZjY0OC00NjUwLTg4NTQtNmRjNjMyYmNhOGZjXC9kZWc2ajR0LWZhMDZmMjlmLThmNDMtNGUyYy04YTk2LTAxYzNjZjljYzUxYy5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.yZP_lTNzaitrC8X-5CW_1hOmD9fTgNagjgd7OQbqvHk" alt="Imagem 1 - Carcharodontosaurus saharicus" title="Carcharodontosaurus saharicus - O Rei do Deserto" width="600">
+            <img src="https://static.wikia.nocookie.net/dinosaurs/images/8/8a/Saurophaganax_by_mariolanzas.jpg/revision/latest?cb=20220522181037" alt="Imagem 2 - Saurophaganax maximus" title="Saurophaganax maximus - O Gigante do Jurássico" width="600">
+            <img src="https://i.pinimg.com/originals/d8/a8/17/d8a817f589405f34dcda4beda76a0115.jpg" alt="Imagem 3 - Acrocanthosaurus atokensis" title="Acrocanthosaurus atokensis - O Veloz Assassino" width="600">
+        </div>
+    </main>
+
+    <!-- Última seção do site -->
+    <div class="last-section">
+        <h2 class="section-title">Requisitos do site</h2> <!-- Título da seção -->
+        <ul class="checklist"> <!-- Checklist -->
+            <li><input type="checkbox" id="item1"><label for="item1">10 classes css;</label></li>
+            <li><input type="checkbox" id="item2"><label for="item2">3 imagens na mesma linha;</label></li>
+            <li><input type="checkbox" id="item3"><label for="item3">Cabeçalho cor: grey;</label></li>
+            <li><input type="checkbox" id="item4"><label for="item4">Comentar todo o código;</label></li>
+            <li><input type="checkbox" id="item5"><label for="item5">Código identado;</label></li>
+            <li><input type="checkbox" id="item6"><label for="item6">Uso das tags: ul, ol, br, hr, b, p, u;</label></li>
+            <li><input type="checkbox" id="item7"><label for="item7">1 redirecionamento interno e outro externo, ambos com target="_blank" (abrir em outra página);</label></li>
+            <li><input type="checkbox" id="item8"><label for="item8">1 tabela com informações;</label></li>
+            <li><input type="checkbox" id="item9"><label for="item9">1 fonte do google;</label></li>
+            <li><input type="checkbox" id="item10"><label for="item10">1 carrossel com 5 imagens;</label></li>
+            <li><input type="checkbox" id="item11"><label for="item11">Checkbox.</label></li>
+        </ul>
+    </div>
+
+</body>
+</html>
